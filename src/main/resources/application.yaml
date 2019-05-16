@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: pro
+
+server:
+  port: 9998
+
+product:
+  ribbon:
+    listOfServers: localhost:8012
+ribbon:
+  eureka:
+    enabled: true
+

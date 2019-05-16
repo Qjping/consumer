@@ -1,0 +1,6 @@
+
+stubrunner:
+  ids-to-service-ids:
+    product: prodiver
+server:
+  port: 8888
