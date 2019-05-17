@@ -21,7 +21,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
-@AutoConfigureStubRunner(ids={"mywh:product:+:8099"},stubsMode = StubRunnerProperties.StubsMode.LOCAL)
+@AutoConfigureStubRunner(ids={"com.example.book:product:+:8099"},stubsMode = StubRunnerProperties.StubsMode.LOCAL)
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT )
 @AutoConfigureMockMvc
@@ -30,15 +30,15 @@ public class RestTest {
     private RestTemplate restTemplate;
     @Test
     public void test1() throws JSONException {
-        ResponseEntity<JSONObject> response = restTemplate.exchange(
-                    "http://localhost:8099/v1/get/1",
-                    HttpMethod.GET,
-                    null,
-                    JSONObject.class
-            );
+//        ResponseEntity<JSONObject> response = restTemplate.exchange(
+//                    "http://localhost:8099/v1/get/2",
+//                    HttpMethod.GET,
+//                    null,
+//                    JSONObject.class
+//            );
 
-        System.out.println(response.getBody());
-        String result= restTemplate.getForEntity("http://localhost:8099/v1/get/1",String.class).getBody();
+//        System.out.println(response.getBody());
+        String result= restTemplate.getForEntity("http://localhost:8099/v1/get/2",String.class).getBody();
 
         JSONObject res=new JSONObject(result);
 

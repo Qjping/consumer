@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-@AutoConfigureStubRunner(ids={"mywh:product:1.0-SNAPSHOT:8099"},stubsMode = StubRunnerProperties.StubsMode.LOCAL)
+@AutoConfigureStubRunner(ids={"com.example.book:product:+:8099"},stubsMode = StubRunnerProperties.StubsMode.LOCAL)
 public class DemoApplicationTests {
     @Autowired
     private ContrallerClient contrallerClient;
