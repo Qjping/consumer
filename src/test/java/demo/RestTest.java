@@ -42,7 +42,7 @@ public class RestTest {
 
         JSONObject res=new JSONObject(result);
 
-        Assert.assertEquals("资治通鉴",res.get("name"));
+        Assert.assertEquals("战国策",res.get("name"));
 
 
     }
